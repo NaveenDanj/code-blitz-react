@@ -30,7 +30,7 @@ function Header() {
                 <LocalFireDepartmentOutlinedIcon sx={{ fontSize: 15 }} />
             </Button>
 
-            <Avatar className='my-auto size-8 ml-2'>
+            <Avatar className='my-auto size-8 ml-2 cursor-pointer'>
                 <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                 <AvatarFallback>CN</AvatarFallback>
             </Avatar>
