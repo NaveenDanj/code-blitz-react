@@ -1,4 +1,5 @@
 import GameModeSection from "./GameModeSection"
+import QuestionSection from "./QuestionSection"
 
 function GameCardSection() {
   return (
@@ -20,7 +21,7 @@ function GameCardSection() {
         </div>
         
         <GameModeSection />
-
+        <QuestionSection />
     </div>
   )
 }

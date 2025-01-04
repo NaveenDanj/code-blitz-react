@@ -17,7 +17,7 @@ function GameModeSection() {
     <div className="mt-8 flex flex-col">
         <label className="text-[20px] font-medium text-lc-text-secondary dark:text-dark-lc-text-secondary">Game Modes</label>
 
-        <div className="grid grid-cols-3 mt-3 gap-4">
+        <div className="grid grid-cols-3 mt-5 gap-4">
             <GameModeItem />
             <GameModeItem />
             <GameModeItem />

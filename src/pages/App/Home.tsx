@@ -7,7 +7,7 @@ function Home() {
     <div className="flex flex-col h-screen w-screen">
       <Header />
       
-      <div className="flex justify-center mt-12 px-2">
+      <div className="flex justify-center mt-12 px-4">
         
         <div className="flex flex-col  gap-7 flex-grow w-full lg:max-w-[1200px]">
           
