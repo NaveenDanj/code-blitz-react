@@ -8,6 +8,7 @@ import { Progress } from "@/components/ui/progress"
 const CalendarFooterComponent = () => {
     return (
         <div className="flex w-full flex-col mt-5">
+            
             <div className="flex justify-between">
                 <div className="flex gap-3">
                     <img className="size-5 my-auto" src="https://leetcode.com/_next/static/images/ttt-a2c700529300981c5d372d69bb9bbdaa.png" />

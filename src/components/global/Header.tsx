@@ -23,7 +23,7 @@ function Header() {
         <div className='flex gap-3'>
             
             <Button className='bg-[#282828] hover:bg-[#282828] my-auto px-2' variant="ghost">
-                <NotificationsOutlinedIcon sx={{ fontSize: 15 }} />
+                <NotificationsOutlinedIcon className='' sx={{ fontSize: 15 }} />
             </Button>
             
             <Button className='bg-[#282828] hover:bg-[#282828] my-auto px-2 text-orange-400' variant="ghost">
