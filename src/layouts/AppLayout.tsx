@@ -6,7 +6,7 @@ function AppLayout() {
     <div className="flex flex-col h-[100vh] w-screen ">
       <Header />
       
-      <div className="flex justify-center mt-12 px-4 overflow-auto">
+      <div className="flex justify-center mt-0 pt-12 px-4 overflow-auto">
         <Outlet />
       </div>
       
