@@ -3,7 +3,7 @@ import QuestionSection from "./QuestionSection"
 
 function GameCardSection() {
   return (
-    <div className="flex flex-col flex-grow mb-auto">
+    <div className="flex flex-col flex-grow overflow-hidden">
         <div className="flex">
             <div className="w-full grid grid-cols-3 flex-grow gap-8">
                 <div className="max-w-[270px] cursor-pointer">

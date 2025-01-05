@@ -25,12 +25,12 @@ const CalendarFooterComponent = () => {
                 <div className="mt-3 w-full flex flex-row">
                     <img className="size-[50px] my-auto rounded-md" src="https://assets.leetcode.com/study_plan_v2/dynamic-programming/cover" />
                     <div className="flex flex-col my-auto w-full px-2 ml-2 gap-2">
-                        <label className="text-xs hover:cursor-pointer hover:underline">Weekly blitz-coding contest</label>
+                        <label className="text-xs">Weekly blitz-coding contest</label>
                         <div className="w-full flex gap-2">
                             <Progress className="my-auto"  value={33} />
-                            <label className="text-xs my-auto hover:cursor-pointer hover:underline">28%</label>
+                            <label className="text-xs my-auto ">28%</label>
                         </div>
-                        <label className="text-xs mt-[-5px] text-gray-400 hover:cursor-pointer hover:underline">position : 5 / 50000</label>
+                        <label className="text-xs mt-[-5px] text-gray-400">position : 5 / 50000</label>
 
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function CalendarComponent() {
     const [date, setDate] = useState<Date | undefined>(new Date())
 
     return (
-        <div className="flex w-full justify-center">
+        <div className="flex justify-center w-full">
             <Calendar
                 mode="single"
                 selected={date}

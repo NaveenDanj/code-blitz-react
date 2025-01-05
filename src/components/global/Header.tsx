@@ -28,6 +28,7 @@ function Header() {
             
             <Button className='bg-[#282828] hover:bg-[#282828] my-auto px-2 text-orange-400' variant="ghost">
                 <LocalFireDepartmentOutlinedIcon sx={{ fontSize: 15 }} />
+                <label className='cursor-pointer text-gray-300 font-bold text-sm'>12</label>
             </Button>
 
             <Avatar className='my-auto size-8 ml-2 cursor-pointer'>

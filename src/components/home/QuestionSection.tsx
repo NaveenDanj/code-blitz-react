@@ -8,8 +8,11 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-  } from "@/components/ui/table"
-  
+} from "@/components/ui/table"
+
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
 function QuestionSection() {
 
@@ -56,21 +59,146 @@ function QuestionSection() {
           totalAmount: "$300.00",
           paymentMethod: "Credit Card",
         },
+        {
+            invoice: "INV005",
+            paymentStatus: "Paid",
+            totalAmount: "$550.00",
+            paymentMethod: "PayPal",
+        },
+        {
+            invoice: "INV006",
+            paymentStatus: "Pending",
+            totalAmount: "$200.00",
+            paymentMethod: "Bank Transfer",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV005",
+            paymentStatus: "Paid",
+            totalAmount: "$550.00",
+            paymentMethod: "PayPal",
+        },
+        {
+            invoice: "INV006",
+            paymentStatus: "Pending",
+            totalAmount: "$200.00",
+            paymentMethod: "Bank Transfer",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+        {
+            invoice: "INV007",
+            paymentStatus: "Unpaid",
+            totalAmount: "$300.00",
+            paymentMethod: "Credit Card",
+        },
+
+        
     ]
 
-
     return (
-        <div className="mt-8 flex flex-col w-full">
+        <div className="mt-8 flex flex-col w-full ">
             <label className="text-[20px] font-medium text-lc-text-secondary dark:text-dark-lc-text-secondary">Practice Questions</label>
+            
+            <div className="flex mt-1 justify-end gap-3">
+                <Button className="dark:bg-[#1A1A1A] px-3" variant={'outline'}>
+                    <ChevronLeft className={"h-4 w-4"} />
+                </Button>
 
-            <div className="w-full mt-5">
+                <Button className="dark:bg-[#1A1A1A] px-3" variant={'outline'}>
+                    <ChevronRight className={"h-4 w-4"} />
+                </Button>
+            </div>
+
+            <div className="flex flex-col w-full mt-5 mb-10 h-full">
                 <Table>
                     
-                    <TableCaption>A list of your recent invoices.</TableCaption>
+                    {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
                     
                     <TableHeader>
                         <TableRow>
-                            <TableHead className="w-[100px]">Status</TableHead>
+                            <TableHead className="w-[50px]">Status</TableHead>
                             <TableHead className="w-[60%]">Title</TableHead>
                             <TableHead className="w-[10%]">Acceptance</TableHead>
                             <TableHead className="text-right ">Difficulty</TableHead>
@@ -80,21 +208,16 @@ function QuestionSection() {
                     <TableBody>
                         {invoices.map((invoice) => (
                         <TableRow key={invoice.invoice}>
-                            <TableCell className="font-medium">{invoice.invoice}</TableCell>
+                            <TableCell className="font-medium">
+                                <CheckOutlinedIcon sx={{ fontSize : 20 }} className="text-green-500" />
+                            </TableCell>
                             <TableCell>{invoice.paymentStatus}</TableCell>
                             <TableCell>{invoice.paymentMethod}</TableCell>
                             <TableCell className="text-right">{invoice.totalAmount}</TableCell>
                         </TableRow>
                         ))}
                     </TableBody>
-
-                    <TableFooter>
-                        <TableRow>
-                            <TableCell colSpan={3}>Total</TableCell>
-                            <TableCell className="text-right">$2,500.00</TableCell>
-                        </TableRow>
-                    </TableFooter>
-                
+                    
                 </Table>
             </div>
 

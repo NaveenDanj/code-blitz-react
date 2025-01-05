@@ -5,7 +5,7 @@ const GameModeItem = () => {
             <img src="https://assets.leetcode.com/study_plan_v2/leetcode-75/cover" alt="1v1" className="rounded-[4px] mr-3.5 h-[72px] w-[72px]" />
             <div className="my-auto flex flex-col">
                 <label className="text-sm font-semibold hover:cursor-pointer hover:underline">24-Hour Code Arena</label>
-                <label className="text-xs text-gray-300 hover:cursor-pointer hover:underline">Weekly blitz-coding contest</label>
+                <label className="text-xs text-gray-300">Weekly blitz-coding contest</label>
             </div>
         </div>
     )
