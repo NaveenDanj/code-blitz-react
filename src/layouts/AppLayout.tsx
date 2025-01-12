@@ -5,11 +5,11 @@ function AppLayout() {
   return (
     <div className="flex flex-col h-[100vh] w-screen ">
       <Header />
-      
-      <div className="flex justify-center mt-0  px-4 overflow-auto">
+
+      <div className="flex justify-center mt-0 overflow-auto">
         <Outlet />
       </div>
-      
+
     </div>
   )
 }
