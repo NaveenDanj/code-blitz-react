@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge"
+import { StartContestDialog } from "./StartContestDialog"
 
 function ContestItem({ name, img }: { name: string, img: string }) {
     return (
@@ -15,7 +15,7 @@ function ContestItem({ name, img }: { name: string, img: string }) {
 
             <div className="my-auto">
                 <center>
-                    <Badge className="cursor-pointer bg-yellow-500 flex justify-center items-center">Start</Badge>
+                    <StartContestDialog />
                 </center>
             </div>
 
